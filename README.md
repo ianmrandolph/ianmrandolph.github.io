@@ -1,1 +1,0 @@
-# ianmrandolph.github.io
