@@ -20,12 +20,11 @@
             td {
                 color:#181d42;
                 text-align:center;
-                background-color:lightpink;
             }
             th {
-                color:#181d42;
+                color:white;
                 text-align:center;
-                background-color:lightblue;
+                background-color:#5387b8;
             }
             h6 {
                 color:white;
@@ -37,7 +36,17 @@
                 color:#faf3c3;
             }
             table {
-                border:2px
+                border:3px;
+                width:500px;
+            }
+            .evenRow {
+                background-color:lightyellow;
+            }
+            .oddRow {
+                background-color:lightpink;
+            }
+            .topData {
+                color:#a8fff3;
             }
         </style>
         <title><b>Page Title</b></title>
@@ -73,13 +82,13 @@
         <br>
         <br>
         <ol>
-            <li><b>Fruit</b></li>
+            <li class="topData"><b>Fruit</b></li>
                 <ul>
                     <li>Apples
                     <li>Organges
                     <li>Pears
                 </ul>
-            <li><b>Vegetables</b></li>
+            <li class="topData"><b>Vegetables</b></li>
                 <ul>
                     <li>Carrot
                     <li>Broccoli
@@ -87,7 +96,7 @@
         </ol>
         <br>
         <ul>
-            <li><b>Fruit</b></li>
+            <li class="topData"><b>Fruit</b></li>
                 <ul>
                     <li>Strawberries
                     <li>Apples
@@ -97,7 +106,7 @@
                         </ul>
                     <li>Pears</li>
                 </ul>
-            <li><b>Vegetables</b></li>
+            <li class="topData"><b>Vegetables</b></li>
                 <ul>
                     <li>Lima Bean
                     <li>Corn
@@ -115,28 +124,28 @@
                 <th><i>Grapes</i></th>
                 <th><i>Oranges</i></th>
             </tr>
-            <tr>
+            <tr class="evenRow">
                <td>Year 2013</td>
                <td>300</td> 
                <td>200</td>
                <td>150</td>
                <td>130</td>
             </tr>
-            <tr>
+            <tr class="oddRow">
                 <td>Year 2012</td>
                 <td>150</td>
                 <td>130</td>
                 <td>120</td>
                 <td>220</td>
             </tr>
-            <tr>
+            <tr class="evenRow">
                 <td>Year 2011</td>
-                <td style="text-align: center;">100</td>
+                <td>100</td>
                 <td>120</td>
                 <td>160</td>
                 <td>200</td>
             </tr>
-            <tr>
+            <tr class="oddRow">
                 <td>year 2010</td>
                 <td>200</td>
                 <td>300</td>
