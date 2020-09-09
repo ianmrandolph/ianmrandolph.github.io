@@ -4,14 +4,14 @@
         <title>Page Title</title>
         <style>
             .navbar {
-                background-color:#3e63de;
+                background-color:black;
                 overflow:hidden;
             }
 
             .navbar li {
                 list-style-type:none;
                 float:left;
-                color:#FFFFFF
+                color: white;
             }
 
             .navbar a {
@@ -23,7 +23,23 @@
             }
 
             .navbar li:hover {
-                background-color: #1b3385;
+                background-color: red;
+            }
+
+            .dropdown-content li {
+                float: none;
+                text-align:center;
+            }
+
+            .dropdown-content {
+                padding: 0px;
+                background-color: black;
+                display: none;
+                position: absolute;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
             }
         </style>
     </head>
@@ -31,13 +47,23 @@
         <ul class="navbar">
             <li><a href="index.html">Home</li>
             <li><a href="resume.html">Resume</li>
+            <li> <a href="aboutme.html">About Me</a></li>
             <li><a href="contactme.html">Contact Me</li>
-            <li><a href="projects.html">Projects</li>
+            <li class="dropdown">
+                <a href="#">Projects
+                <ul class="dropdown-content">
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                    <li><a href="#">Project 4</a></li>
+                    <li><a href="#">Project 5</a></li>
+                </ul>
+            </li>
         </ul>
 
         <h1>Placeholder title</h1>
         
-        <p>Placeholder paragraph</p>    
+        <p>Placeholder paragraph</p>
     </body>
        
     
