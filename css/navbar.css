@@ -1,4 +1,4 @@
-        <style>
+
             .navbar {
                 background-color:black;
                 overflow:hidden;
@@ -37,4 +37,7 @@
             .dropdown:hover .dropdown-content {
                 display: block;
             }
-        </style>
+
+            .navbar .active {
+                background-color: red;
+            }
