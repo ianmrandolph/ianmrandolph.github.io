@@ -42,3 +42,7 @@
             .navbar .active {
                 background-color: red;
             }
+
+            .navbar .name {
+                float: right;
+            }
