@@ -20,7 +20,7 @@
             }
 
             .navbar li:hover {
-                background-color: red;
+                background-color: gray;
             }
 
             .dropdown-content li {
@@ -40,9 +40,21 @@
             }
 
             .navbar .active {
-                background-color: red;
+                background-color: gray;
             }
 
             .navbar .name {
                 float: right;
+            }
+
+            .navbar .name:hover {
+                background-color: black;
+            }
+
+            .head_item {
+                font-size: 22px;
+            }
+
+            li {
+                font-size: 16px;
             }
