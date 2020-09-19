@@ -1,3 +1,24 @@
+            td {
+                text-align:center;
+                background-color:lightpink
+            }
+            th {
+                text-align:center;
+                background-color:lightblue;
+            }
+            h1 {
+                font-size:30px;
+            }
+            ul li {
+                color:green;
+            }
+            b {
+                color:black
+            }
+
+            body {
+                background-color: lightyellow;
+            }
             body {
                 background-color:#333333;
             }
