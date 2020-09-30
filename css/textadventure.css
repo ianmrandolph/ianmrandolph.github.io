@@ -1,0 +1,28 @@
+    <stlye>
+        #container {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            back
+        }
+
+        #left_pane{
+            background-color: green;
+            height: 100%;
+            width: 56%;
+        }
+
+        #right_pane{
+            background-color: blue;
+            height: 100%;
+            width 44%;
+        }
+
+        #story_text{
+            background-color: yellow;
+            height: 80%;
+            
+        }
+    </style>
