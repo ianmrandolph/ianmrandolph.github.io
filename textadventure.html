@@ -91,10 +91,10 @@
                 <p id="p3">Do you like ice cream?</p>
             </div>
             <div id="button_choices">
-                <a id="b1" class="buttons" href="" onclick="bclick(1)">Yes</a>
-                <a id="b2" class="buttons" href="" onclick="blclick(2)">No</a>
-                <a id="b3" class="buttons" href="" onclick="bclick(3)">Maybe</a>
-                <a id="b4" class="buttons" href="" onclick="bclick(4)">So</a>
+                <a id="b1" class="buttons" href="#" onclick="bclick(1)">Yes</a>
+                <a id="b2" class="buttons" href="#" onclick="blclick(2)">No</a>
+                <a id="b3" class="buttons" href="#" onclick="bclick(3)">Maybe</a>
+                <a id="b4" class="buttons" href="#" onclick="bclick(4)">So</a>
             </div>
         </div>
     </div>
@@ -133,21 +133,43 @@
             b1.innerHTML = "Foreward";
             b2.innerHTML = "Left";
             b3.innerHTML = "Right";
+            b3.style.display = "block";
         }
 
+        function doNotEnter(){
+            img.src="images/room-1.jpg";
+            p1.innerHTML = "begin maze challenge";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "    ";
+            b2.innerHTML = "Left";
+            b3.innerHTML = "Right";
+            b3.style.display = "block"; 
+        }
 
         //////State Machine
         function bclick(button){
-            if (state == "intro"){
-                if(button == 1)
+            if(state == "intro"){
+                if(button == 1){
                     enterLostWoods();
-                    state="enterLostWoods"
-            }
-            else if(button ==2){
-                goToCamp();
-                state = "goToCamp"
-            }
+                    state = "enterLostWoods";
+                }
 
+                else if(button == 2){
+                    doNotEnter();
+                    state = "doNotEnter";
+                }
+            }
+            else if(state == "enterLostWoods"){
+                if(button == 1){
+                    left_1();
+                    state = "left_1";
+                }
+                else if(button == 2){
+                    right_1();
+                    state = "right_1";
+                }
+            }
         }
     </script>
     </body>
