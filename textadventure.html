@@ -86,9 +86,9 @@
         </div>
         <div id="right_pane">
             <div id="story_text">
-                <p id="p1">Welcome to Ice</p>
-                <p id="p2">It is the year 2020</p>
-                <p id="p3">Do you like ice cream?</p>
+                <p id="p1">[Welcome to Ice]</p>
+                <p id="p2">[It is the year 2020]</p>
+                <p id="p3">[placeholder]</p>
             </div>
             <div id="button_choices">
                 <a id="b1" class="buttons" href="#" onclick="bclick(1)">Yes</a>
@@ -115,36 +115,61 @@
         intro();
 
         function intro(){
-            imgs.src = "images/ferret.jpg";
+            imgs.src = "images/maxresdefault.jpg";
             b1.innerHTML = "Enter Lost Woods";
-            b2.innerHTML = "Do Not Enter";
-            b3.style.display = "none";
+            b2.innerHTML = "";
+            b3.innerHTML = "";
             b4.style.display = "none";
             p1.innerHTML = "You are Link, the young HERO OF TIME...";
-            p2.innerHTML = "Will you enter the Lost Woods or Stay out here like a fat lard?";
-            p3.innerHTML = "";
+            p2.innerHTML = "You must traverse the confusing Lost Woods in order to reach the Forest Temple.";
+            p3.innerHTML = " ";
         }
 
         function enterLostWoods(){
-            img.src="images/woods-enter.jpg";
+            imgs.src="images/woods-enter.jpg";
             p1.innerHTML = "begin maze challenge";
-            p2.innerHTML = "there are 3 dark passageways through hollowed tree trunks";
+            p2.innerHTML = "there are 2 dark passageways through between the tree trunks on either side of you.";
             p3.innerHTML = "Which path will you take?";
-            b1.innerHTML = "Foreward";
-            b2.innerHTML = "Left";
-            b3.innerHTML = "Right";
-            b3.style.display = "block";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "Right";
         }
 
-        function doNotEnter(){
-            img.src="images/room-1.jpg";
-            p1.innerHTML = "begin maze challenge";
-            p2.innerHTML = "";
-            p3.innerHTML = "";
+        function skullKid(){
+            imgs.src="images/skull-kid.jpg";
+            p1.innerHTML = "On the other side of the wooded passage is a young forest boy, the SkullKid.";
+            p2.innerHTML = "He greets you cheerfully: 'Hi! Welcome the Lost Woods! In order the get to the end, you'll have to follow my advice.";
+            p3.innerHTML = " ";
+            b1.innerHTML = "Listen to him";
+            b2.innerHTML = "Turn Back";
+        }
+
+        function room1(){
+            imgs.src="images/room-1.jpg";
+            p1.innerHTML = "You walk into the dark woods and come to a tranquil opening.";
+            p2.innerHTML = "You can hear a rustling sound between the trees to your left.";
+            p3.innerHTML = " ";
             b1.innerHTML = "Right";
             b2.innerHTML = "Left";
-            b3.innerHTML = "";
-            b3.style.display = "block"; 
+            b3.innerHTML = "Foreward";
+        }
+
+        function explain(){
+            imgs.src="images/skull-kid.jpg";
+            p1.innerHTML = "This forest is one big cursed maze.";
+            p2.innerHTML = "To get to the other side, you'll have to follow the music echoing through the halls.";
+            p3.innerHTML = " ";
+            b1.innerHTML = "Thank You!";
+            b2.innerHTML = "";
+        }
+
+        function room2(){
+            imgs.src="images/room-2.jpg";
+            p1.innerHTML = "Second Room";
+            p2.innerHTML = "cool second room";
+            p3.innerHTML = " ";
+            b1.innerHTML = "Right";
+            b2.innerHTML = "Left";
+            b3.innerHTML = "Foreward";
         }
 
         //////State Machine
@@ -154,20 +179,75 @@
                     enterLostWoods();
                     state = "enterLostWoods";
                 }
-
-                else if(button == 2){
-                    doNotEnter();
-                    state = "doNotEnter";
-                }
             }
+
             else if(state == "enterLostWoods"){
                 if(button == 1){
-                    left_1();
-                    state = "left_1";
+                    skullKid();
+                    state = "skullKid";
                 }
+
                 else if(button == 2){
-                    right_1();
-                    state = "right_1";
+                    room1();1
+                    state = "room1";
+                }
+            }
+
+            else if(state == "skullKid"){
+                if(button == 1){
+                    explain();
+                    state = "explain";
+                }
+
+                else if(button == 2){
+                    enterLostWoods();
+                    state = "enterLostWoods";
+                }
+            }
+
+            else if(state == "explain"){
+                if(button == 1)
+                enterLostWoods();
+                state = "enterLostWoods";
+            }
+
+            else if(state == "room1"){
+                if(button == 1){
+                    room2();
+                    state = "room2";
+                }
+
+                else if(button == 2){
+                    intro();
+                    state = "intro";
+                }
+
+                else if(button == 3){
+                    intro();
+                    state = "intro";
+                }
+            }
+
+            else if(state == "room2"){
+                if(button == 1){
+                    room3();
+                    state = "room3";
+                }
+
+                else if(button == 2){
+                    intro();
+                    state = "intro";
+                }
+
+                else if(button == 3){
+                    intro();
+                    state = "intro";
+                }
+            }
+
+            else if(state == "room3"){
+                if(button == 1){
+                    
                 }
             }
         }
