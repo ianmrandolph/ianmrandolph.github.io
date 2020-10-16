@@ -92,7 +92,7 @@
             </div>
             <div id="button_choices">
                 <a id="b1" class="buttons" href="#" onclick="bclick(1)">Yes</a>
-                <a id="b2" class="buttons" href="#" onclick="blclick(2)">No</a>
+                <a id="b2" class="buttons" href="#" onclick="bclick(2)">No</a>
                 <a id="b3" class="buttons" href="#" onclick="bclick(3)">Maybe</a>
                 <a id="b4" class="buttons" href="#" onclick="bclick(4)">So</a>
             </div>
@@ -172,6 +172,16 @@
             b3.innerHTML = "Foreward";
         }
 
+        function room3(){
+            imgs.src="images/room-2.jpg";
+            p1.innerHTML = "3rd Room";
+            p2.innerHTML = "cool 3rd room";
+            p3.innerHTML = " ";
+            b1.innerHTML = "Right";
+            b2.innerHTML = "Left";
+            b3.innerHTML = "Foreward";
+        }
+
         //////State Machine
         function bclick(button){
             if(state == "intro"){
@@ -188,7 +198,7 @@
                 }
 
                 else if(button == 2){
-                    room1();1
+                    room1();
                     state = "room1";
                 }
             }
@@ -206,9 +216,10 @@
             }
 
             else if(state == "explain"){
-                if(button == 1)
-                enterLostWoods();
-                state = "enterLostWoods";
+                if(button == 1){
+                    enterLostWoods();
+                    state = "enterLostWoods";
+                }
             }
 
             else if(state == "room1"){
