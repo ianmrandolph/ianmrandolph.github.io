@@ -10,14 +10,14 @@
                 right: 0px;
                 top: 90px;
                 bottom: 0px;
-                background-color: #c9ffee;
+                background-color: #0b6e49;
 
             }
 
             #left_pane{
-                background-color: #cfa8ff;
+                background-color: #06695f;
                 height: 100%;
-                width: 56%;
+                width: 69%;
                 float: left;
                 display:flex;
                 align-items: center;
@@ -33,12 +33,12 @@
             #story_text{
                 background-color: ;
                 height: 80%;
-                color: red;
+                color: white;
                 font-weight: bold;
             }
 
             #button_choices{
-                background-color: lightblue;
+                background-color: #62a684;
                 display: flex;
                 height: 20%;
                 align-items: center;
@@ -59,6 +59,10 @@
                 border-radius: 8px;
                 font-size: 16px;
                 margin:10px;
+            }
+
+            p {
+                text-align: center;
             }
         </style>
     </head>
@@ -116,13 +120,23 @@
 
         function intro(){
             imgs.src = "images/maxresdefault.jpg";
-            b1.innerHTML = "Enter Lost Woods";
-            b2.innerHTML = "";
+            b1.innerHTML = "";
+            b2.innerHTML = "Enter Lost Woods";
             b3.innerHTML = "";
             b4.style.display = "none";
             p1.innerHTML = "You are Link, the young HERO OF TIME...";
             p2.innerHTML = "You must traverse the confusing Lost Woods in order to reach the Forest Temple.";
             p3.innerHTML = " ";
+        }
+
+        function fail(){
+            imgs.src = "images/fail.jpg";
+            p1.innerHTML = "YOU FAILED!";
+            p2.innerHTML = "Follow the clues and learn from your mistakes!";
+            p3.innerHTML = "Try Again?";
+            b1.innerHTML = "";
+            b2.innerHTML = "Try Again";
+            b3.innerHTML = "";
         }
 
         function enterLostWoods(){
@@ -131,7 +145,8 @@
             p2.innerHTML = "there are 2 dark passageways through between the tree trunks on either side of you.";
             p3.innerHTML = "Which path will you take?";
             b1.innerHTML = "Left";
-            b2.innerHTML = "Right";
+            b2.innerHTML = "";
+            b3.innerHTML = "Right";
         }
 
         function skullKid(){
@@ -140,17 +155,18 @@
             p2.innerHTML = "He greets you cheerfully: 'Hi! Welcome the Lost Woods! In order the get to the end, you'll have to follow my advice.";
             p3.innerHTML = " ";
             b1.innerHTML = "Listen to him";
-            b2.innerHTML = "Turn Back";
+            b2.innerHTML = "";
+            b3.innerHTML = "Turn Back";
         }
 
         function room1(){
-            imgs.src="images/room-1.jpg";
-            p1.innerHTML = "You walk into the dark woods and come to a tranquil opening.";
-            p2.innerHTML = "You can hear a rustling sound between the trees to your left.";
+            imgs.src="images/room1.jpg";
+            p1.innerHTML = "room 1.";
+            p2.innerHTML = "room 1";
             p3.innerHTML = " ";
-            b1.innerHTML = "Right";
-            b2.innerHTML = "Left";
-            b3.innerHTML = "Foreward";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "Foreward";
+            b3.innerHTML = "Right";
         }
 
         function explain(){
@@ -158,36 +174,144 @@
             p1.innerHTML = "This forest is one big cursed maze.";
             p2.innerHTML = "To get to the other side, you'll have to follow the music echoing through the halls.";
             p3.innerHTML = " ";
-            b1.innerHTML = "Thank You!";
-            b2.innerHTML = "";
+            b1.innerHTML = "";
+            b2.innerHTML = "Thank You!";
+            b3.innerHTML = "";
         }
 
         function room2(){
-            imgs.src="images/room-2.jpg";
+            imgs.src="images/room2.jpg";
             p1.innerHTML = "Second Room";
             p2.innerHTML = "cool second room";
             p3.innerHTML = " ";
-            b1.innerHTML = "Right";
-            b2.innerHTML = "Left";
-            b3.innerHTML = "Foreward";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "Foreward";
+            b3.innerHTML = "Right";
         }
 
         function room3(){
-            imgs.src="images/room-2.jpg";
-            p1.innerHTML = "3rd Room";
-            p2.innerHTML = "cool 3rd room";
-            p3.innerHTML = " ";
-            b1.innerHTML = "Right";
-            b2.innerHTML = "Left";
-            b3.innerHTML = "Foreward";
+            imgs.src="images/room3.jpg";
+            p1.innerHTML = "As you enter the next room, you can see two openings on your left and right, and an Oasis in front of you";
+            p2.innerHTML = "The opening to your right it cloaked in vines. You can hear the sound of dripping water from the opening to the left.";
+            p3.innerHTML = "Which way will you go?";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "To the Oasis";
+            b3.innerHTML = "Right";
+        }
+
+        function room4(){
+            imgs.src = "images/room4.jpg";
+            p1.innerHTML = "4th room";
+            p2.innerHTML = "four";
+            p3.innerHTML = "maybe";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "Foreward";
+            b3.innerHTML = "Right";
+        }
+
+        function room5(){
+            imgs.src = "images/room5.jpg";
+            p1.innerHTML = "5th";
+            p2.innerHTML = "Five";
+            p3.innerHTML = "hehehe";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "Foreward";
+            b3.innerHTML = "Right";
+        }
+
+        function swim(){
+            imgs.src = "images/swim.jpg";
+            p1.innerHTML = "You tread into the Oasis and begin treading water.";
+            p2.innerHTML = "The water in front of you begins bubbling, and a Zora emerges";
+            p3.innerHTML = "Greetings, young traveler. To reach the next chamber, you must listen for water.";
+            b1.innerHTML = "";
+            b2.innerHTML = "Thanks!";
+            b3.innerHTML = "";
+        }
+
+        function dekuScrub(){
+            imgs.src = "images/dekuScrub.jpg";
+            p1.innerHTML = "You ";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "";
+            b2.innerHTML = "Many Thanks!";
+            b3.innerHTML = "";
+        }
+
+        function goToRock(){
+            imgs.src = "images/rock.jpg";
+            p1.innerHTML = "";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "";
+            b2.innerHTML = "";
+            b3.innerHTML = "";
+        }
+
+        function openRock(){
+            imgs.src = "images/bigdig.jpg";
+            p1.innerHTML = "You ";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "";
+            b2.innerHTML = "Many Thanks!";
+            b3.innerHTML = "";
+        }
+
+        function goronPass(){
+            imgs.src = "images/Goron.jpg";
+            p1.innerHTML = "As you crawl through the hole in the wall, you hear the sound of heavy breathing. You happen upon a hulking mass in a humid cave-- a Goron, from Death Mountain.";
+            p2.innerHTML = "You try to greet him, as you has the last two people you met, but this one is different. ";
+            p3.innerHTML = "He turns to look at you with his eyes blood-red. 'GET OUT OF HERE! GO BACK WHERE YOU CAME!', he screams violently.";
+            b1.innerHTML = "";
+            b2.innerHTML = "RUN AWAY!";
+            b3.innerHTML = "";
+        }
+
+        function congrats(){
+            imgs.src = "images/forest_temple.jpg";
+            p1.innerHTML = "CONGRATULATIONS!";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "";
+            b2.innerHTML = "Many Thanks!";
+            b3.innerHTML = "";
+        }
+
+        function room52(){
+            imgs.src = "images/room5.jpg";
+            p1.innerHTML = "You escape the Goron and emerge back through the passage.";
+            p2.innerHTML = "But you still must figure out which passage to take.";
+            p3.innerHTML = "Which way will you go?";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "Back the Way You Came";
+            b3.innerHTML = "Right";
+        }
+
+        function room6(){
+            imgs.src = "images/room6.jpg";
+            p1.innerHTML = "You reach the final room ";
+            p2.innerHTML = "";
+            p3.innerHTML = "";
+            b1.innerHTML = "Left";
+            b2.innerHTML = "Foreward";
+            b3.innerHTML = "Right";
         }
 
         //////State Machine
         function bclick(button){
             if(state == "intro"){
-                if(button == 1){
+                if(button == 2){
                     enterLostWoods();
                     state = "enterLostWoods";
+                }
+            }
+
+            else if(state == "fail"){
+                if(button == 2){
+                    intro();
+                    state = "intro"
                 }
             }
 
@@ -197,7 +321,7 @@
                     state = "skullKid";
                 }
 
-                else if(button == 2){
+                else if(button == 3){
                     room1();
                     state = "room1";
                 }
@@ -209,14 +333,14 @@
                     state = "explain";
                 }
 
-                else if(button == 2){
+                else if(button == 3){
                     enterLostWoods();
                     state = "enterLostWoods";
                 }
             }
 
             else if(state == "explain"){
-                if(button == 1){
+                if(button == 2){
                     enterLostWoods();
                     state = "enterLostWoods";
                 }
@@ -229,36 +353,157 @@
                 }
 
                 else if(button == 2){
-                    intro();
-                    state = "intro";
+                    fail();
+                    state = "fail";
                 }
 
                 else if(button == 3){
-                    intro();
-                    state = "intro";
+                    fail();
+                    state = "fail";
                 }
             }
 
             else if(state == "room2"){
                 if(button == 1){
-                    room3();
-                    state = "room3";
+                    fail();
+                    state = "fail";
                 }
 
                 else if(button == 2){
-                    intro();
-                    state = "intro";
+                    fail();
+                    state = "fail";
                 }
 
                 else if(button == 3){
-                    intro();
-                    state = "intro";
+                    room3();
+                    state = "room3";
                 }
             }
 
             else if(state == "room3"){
                 if(button == 1){
-                    
+                    room4();
+                    state = "room4";
+                }
+
+                else if(button == 2){
+                    swim();
+                    state = "swim";
+                }
+
+                else if(button == 3){
+                    fail();
+                    state = "fail";
+                }
+            }
+
+            else if(state == "swim"){
+                if(button == 2){
+                    room3();
+                    state = "room3";
+                }
+            }
+
+            else if(state == "room4"){
+                if(button == 1){
+                    dekuScrub();
+                    state = "dekuScrub";
+                }
+
+                else if(button == 2){
+                    room5();
+                    state = "room5";
+                }
+
+                else if(button == 3){
+                    fail();
+                    state = "fail";
+                }
+            }
+
+            else if(state == "dekuScrub"){
+                if(button == 2){
+                    room4();
+                    state = "room4";
+                }
+            }
+
+            else if(state == "room5"){
+                if(button == 1){
+                    room6();
+                    state = "room6";
+                }
+
+                else if(button == 2){
+                    goToRock();
+                    state = "goToRock";
+                }
+
+                else if(button == 3){
+                    fail();
+                    state = "fail";
+                }
+            }
+
+            else if(state == "goToRock"){
+                if(button == 2){
+                    openRock();
+                    state = "openRock";
+                }
+            }
+
+            else if(state == "openRock"){
+                if(button == 2){
+                    goronPass();
+                    state = "goronPass";
+                }
+            }
+
+            else if(state == "goronPass"){
+                if(button == 2){
+                    room52();
+                    state = "room52"
+                }
+            }
+
+            else if(state == "room52"){
+                if(button == 1){
+                    fail();
+                    state = "fail";
+                }
+                
+                else if(button == 2){
+                    room6();
+                    state = "room6";
+                }
+
+                else if(button == 3){
+                    fail();
+                    state = "fail";
+                }
+            }
+
+            else if(state == "room6"){
+                if(button == 1){
+                    congrats();
+                    state = "congrats";
+                }
+
+                else if(button == 2){
+                    congrats();
+                    state = "congrats"
+                }
+
+                else if(button == 3){
+                    congrats();
+                    state = "congrats";
+                }
+            }
+
+            else if(state == "congrats"){
+                if(button == 2){
+                    intro();
+                    state = "intro";
                 }
             }
         }
