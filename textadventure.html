@@ -64,6 +64,11 @@
             p {
                 text-align: center;
             }
+
+            img {
+                width: 600px;
+                height:;
+            }
         </style>
     </head>
     <body>
@@ -142,7 +147,7 @@
         function enterLostWoods(){
             imgs.src="images/woods-enter.jpg";
             p1.innerHTML = "begin maze challenge";
-            p2.innerHTML = "there are 2 dark passageways through between the tree trunks on either side of you.";
+            p2.innerHTML = "there are 2 dark passageways through hollowed tree trunks on either side of you.";
             p3.innerHTML = "Which path will you take?";
             b1.innerHTML = "Left";
             b2.innerHTML = "";
@@ -161,9 +166,9 @@
 
         function room1(){
             imgs.src="images/room1.jpg";
-            p1.innerHTML = "room 1.";
-            p2.innerHTML = "room 1";
-            p3.innerHTML = " ";
+            p1.innerHTML = "You follow the path to the right, entering a clearing with 3 paths, one to the right, left, and dead ahead. ";
+            p2.innerHTML = "In the center of the clearing is a single tree with visible roots running to the left.";
+            p3.innerHTML = "Which path will you choose?";
             b1.innerHTML = "Left";
             b2.innerHTML = "Foreward";
             b3.innerHTML = "Right";
@@ -171,9 +176,9 @@
 
         function explain(){
             imgs.src="images/skull-kid.jpg";
-            p1.innerHTML = "This forest is one big cursed maze.";
-            p2.innerHTML = "To get to the other side, you'll have to follow the music echoing through the halls.";
-            p3.innerHTML = " ";
+            p1.innerHTML = "'This forest is one big cursed maze.'";
+            p2.innerHTML = "'To get to the other side, follow the clues littered through each clearing, and choose the according path!'";
+            p3.innerHTML = "'And that's all there is to it!'";
             b1.innerHTML = "";
             b2.innerHTML = "Thank You!";
             b3.innerHTML = "";
@@ -181,11 +186,11 @@
 
         function room2(){
             imgs.src="images/room2.jpg";
-            p1.innerHTML = "Second Room";
-            p2.innerHTML = "cool second room";
-            p3.innerHTML = " ";
+            p1.innerHTML = "You continue through the woods and come across 2 branching paths, one to the left and the other to the right.";
+            p2.innerHTML = "The one on the right has flowers growing along it, and the left has dying trees and wilting flowers.";
+            p3.innerHTML = "Which way will you go?";
             b1.innerHTML = "Left";
-            b2.innerHTML = "Foreward";
+            b2.innerHTML = "";
             b3.innerHTML = "Right";
         }
 
@@ -201,21 +206,21 @@
 
         function room4(){
             imgs.src = "images/room4.jpg";
-            p1.innerHTML = "4th room";
-            p2.innerHTML = "four";
-            p3.innerHTML = "maybe";
-            b1.innerHTML = "Left";
+            p1.innerHTML = "As you pass into the next room, you can see 2 paths, one ahead and one to the right. There is a small meadow with a lone tree to your left.";
+            p2.innerHTML = "You can hear the wind whistling ahead of you and rustling leaves to your right?";
+            p3.innerHTML = "What will you do?";
+            b1.innerHTML = "Meadow";
             b2.innerHTML = "Foreward";
             b3.innerHTML = "Right";
         }
 
         function room5(){
             imgs.src = "images/room5.jpg";
-            p1.innerHTML = "5th";
-            p2.innerHTML = "Five";
-            p3.innerHTML = "hehehe";
+            p1.innerHTML = "The fifth room is warmer than the previous ones. There are 2 passageways on either side of you, and a strange rock directly in front of you.";
+            p2.innerHTML = "What will you do?";
+            p3.innerHTML = "";
             b1.innerHTML = "Left";
-            b2.innerHTML = "Foreward";
+            b2.innerHTML = "Look At The Rock";
             b3.innerHTML = "Right";
         }
 
@@ -223,7 +228,7 @@
             imgs.src = "images/swim.jpg";
             p1.innerHTML = "You tread into the Oasis and begin treading water.";
             p2.innerHTML = "The water in front of you begins bubbling, and a Zora emerges";
-            p3.innerHTML = "Greetings, young traveler. To reach the next chamber, you must listen for water.";
+            p3.innerHTML = "'Greetings, young traveler. To reach the next chamber, you must listen for water.'";
             b1.innerHTML = "";
             b2.innerHTML = "Thanks!";
             b3.innerHTML = "";
@@ -231,9 +236,9 @@
 
         function dekuScrub(){
             imgs.src = "images/dekuScrub.jpg";
-            p1.innerHTML = "You ";
-            p2.innerHTML = "";
-            p3.innerHTML = "";
+            p1.innerHTML = "As you walk into the small pasture, a small creature pokes its head out from the foliage. It's a Deku Scrub. ";
+            p2.innerHTML = "'Hello, forest boy!' he says, 'In order to choose the right path, all you gotta do is listen to the whistle of the wind!'";
+            p3.innerHTML = "The Deku Scrub then begins whistling, with no sign of stopping.";
             b1.innerHTML = "";
             b2.innerHTML = "Many Thanks!";
             b3.innerHTML = "";
@@ -241,22 +246,22 @@
 
         function goToRock(){
             imgs.src = "images/rock.jpg";
-            p1.innerHTML = "";
-            p2.innerHTML = "";
+            p1.innerHTML = "You approach the rock directly in front of you. You feek warm air coming from behind it.";
+            p2.innerHTML = "Push the rock aside?";
             p3.innerHTML = "";
-            b1.innerHTML = "";
+            b1.innerHTML = "Yes";
             b2.innerHTML = "";
-            b3.innerHTML = "";
+            b3.innerHTML = "No";
         }
 
         function openRock(){
             imgs.src = "images/bigdig.jpg";
-            p1.innerHTML = "You ";
-            p2.innerHTML = "";
+            p1.innerHTML = "The rock reveals a hole in the cliff wall behind it. Steam is pouring out from what you assume to be a volcanic cave.";
+            p2.innerHTML = "You cannot see what is inside. Will you enter?";
             p3.innerHTML = "";
-            b1.innerHTML = "";
-            b2.innerHTML = "Many Thanks!";
-            b3.innerHTML = "";
+            b1.innerHTML = "Yes";
+            b2.innerHTML = "";
+            b3.innerHTML = "No Way";
         }
 
         function goronPass(){
@@ -272,10 +277,10 @@
         function congrats(){
             imgs.src = "images/forest_temple.jpg";
             p1.innerHTML = "CONGRATULATIONS!";
-            p2.innerHTML = "";
-            p3.innerHTML = "";
+            p2.innerHTML = "Thank you for embarking on my Text Adventure!";
+            p3.innerHTML = "Click the button below to play again!";
             b1.innerHTML = "";
-            b2.innerHTML = "Many Thanks!";
+            b2.innerHTML = "Play Again?";
             b3.innerHTML = "";
         }
 
@@ -291,9 +296,9 @@
 
         function room6(){
             imgs.src = "images/room6.jpg";
-            p1.innerHTML = "You reach the final room ";
-            p2.innerHTML = "";
-            p3.innerHTML = "";
+            p1.innerHTML = "You reach the final clearing in the Lost Woods. There are three openings ahead and to the left and right. ";
+            p2.innerHTML = "Every opening looks the same. There is nobody to be found anywhere around.";
+            p3.innerHTML = "Which way will you go?";
             b1.innerHTML = "Left";
             b2.innerHTML = "Foreward";
             b3.innerHTML = "Right";
@@ -446,16 +451,26 @@
             }
 
             else if(state == "goToRock"){
-                if(button == 2){
+                if(button == 1){
                     openRock();
                     state = "openRock";
+                }
+
+                else if(button == 3){
+                    room52();
+                    state = "room52";
                 }
             }
 
             else if(state == "openRock"){
-                if(button == 2){
+                if(button == 1){
                     goronPass();
                     state = "goronPass";
+                }
+
+                else if(button == 3){
+                    room52();
+                    state = "room52";
                 }
             }
 
