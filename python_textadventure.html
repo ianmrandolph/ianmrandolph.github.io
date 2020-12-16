@@ -25,6 +25,10 @@
 
 <iframe height="600px" width="100%" src="https://repl.it/@IanRandolph/Python-Text-Adventure?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
+<h1>
+    Written Response
+</h1>
+
 <p>My original ending function did not display when I moved to it at one point. I realized that because i was using state == “end” in the while loop for my state machine, i could not use end() for my end card. I changed the end function to ending() rather than end() in order to display it.</p>
 <p>
     In the 3rd room of my python text adventure, I wanted the player to answer a math problem in order to advance. I wanted the player to have 3 guesses before they failed, and tried to use a while loop to do this. I originally could not find a way to to break out of the while loop once the player has answered correctly, only when they ran out of chances. In order to rectify this problem, I found that if I used an “and” statement in the while loop, the loop would end when the 3 chances had been exhausted OR when the correct answer was typed.
