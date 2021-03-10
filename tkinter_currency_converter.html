@@ -28,15 +28,67 @@
 <iframe height="800px" width="100%" src="https://repl.it/@IanRandolph/Tkinter-Currency-Calculator?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 <video width="620" height="440" controls>
-    <source src="currency_tkinter.mp4" type="video/mp4">
-</video>
+  <source src="videos/currency_tkinter.mp4" type="video/mp4">
 
-<iframe src="https://drive.google.com/file/d/1wyHqeafsC3eCToGkenaL_ptaRY2C79Bx/preview" width="640" height="480"></iframe>
+</video>
 
 <h1>
     Written Response
 </h1>
 
 <p>
+    The purpose of my program is to convert currencies into their foriegn values. The program is seen taking multiple different currency inputs and converting them into other currencies, as well as logging past inputs in a list box. The input of the program is a float value representing a value of one of four different currencies. The output is three float values representing the conversion to the remaining three currencies.
+</p>
 
+<h2>List</h4>
+<br>
+<img src="images/store_in_listbox.jpg" width=300px>
+<br>
+<br>
+<br>
+<img src="images/listbox_img.jpg" width=300px>
+
+<p>
+    The list box is labeled “Past Currency Inputs” on-screen, and is called “list_past” in the code. The data in the listbox represents numerical values of currency previously input by the user. I wanted to make some way for users to remember past numbers they’ve input so they can experiment and make comparisons more easily.
+</p>
+<br>
+<h2>Algorithm</h2>
+<br>
+<img src="images/define_list.jpg" width=300px>
+<br>
+<br>
+<br>
+<img src="images/call_list.jpg" width=300px>
+<br>
+<p>
+    The identified program takes the currency  input from the user and logs it in a listbox. This helps the user experiment with different conversions without having to remember their past inputs.
+</p>
+<br>
+<h3>Procedure</h3>
+<p>
+    1. Type an input into the calculator using the on-screen buttons
+</p>
+
+<p>
+    2. Push the on-screen “Convert” button
+</p>
+
+<p>
+    3. The number you input will be cleared from the calculator and logged in the “Past inputs” listbox.
+</p>
+<br>
+<p>
+    On line 135, the function “convertCAN()” calls the procedure to update the “past inputs” listbox along with 3 functions that convert Canadian dollars into USD, Euros, and Japanese Yen. On line 151 the function “convertYEN()” calls the procedure to update the “Past Inputs” listbox along with three functions to convert Japanese Yen into USD, CAN, and EUR. 
+</p>
+<br>
+<h3>
+    Conditions Tested For
+</h3>
+
+<p>
+    1. If the calculator is set to Canadian Dollars and if the user has pushed the “Convert” button.
+</p>
+
+<p>
+    2. If the user has set the calculator to take Japanese yen input. If the user has pushed the “Convert Button”
 </p>
